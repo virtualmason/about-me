@@ -1,0 +1,43 @@
+html {
+  box-sizing: border-box;
+}
+body {
+background-color: black;
+}
+
+header {
+	background-color:grey;
+	text-align: center;
+}
+.box {
+	width: 70%;
+  position:absolute;
+  color:#fff;
+  top:50%;
+	left:50%;
+	padding: 0 5px;
+  padding:15px;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+
+}
+
+main {
+	display:flex;
+	align-items: center;
+  justify-content: center;
+  background-color: lightBlue;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Indie Flower', cursive;
+    
+}
+
+footer {
+	background-color: grey;
+	text-align: center;
+}
+
+h1 {
+  text-align: center; 
+}
