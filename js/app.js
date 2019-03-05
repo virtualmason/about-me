@@ -10,6 +10,6 @@
              pos === 200? clearInterval(int): pos++;
          };
     let ans = prompt("what is your name")
-    document.querySelector("header").innerHTML=ans;
+    document.querySelector("header").innerHTML="My name is "+ans;
     }
     
