@@ -24,7 +24,9 @@ header img {
 	 font-family: Verdana, Geneva, Tahoma, sans-serif;
 	 margin-bottom: 0;
 } 
-
+ .small{
+	 font-size: x-small ;
+ }
 header > p {
 	margin-top:0;
 
