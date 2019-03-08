@@ -3,24 +3,35 @@ body {
 	color: white;
 	background: black;
 }
+nav {
+	text-align: center;
+	position: relative;
+	right: 4%;
+	top: -50px;
+}
+.email {
+	text-align: center;
+	margin-top: 12%;
+	display: relative;
+	right: 500px;
+}
 header {
 	display: block;
-  margin: auto;
+	margin: auto;
 	text-align: center;
-	margin-top: 3%;
+	margin-top: 10%;
 	margin-bottom: 30px;
 }
- .main-center > h3, .main-center, nav{
+.main-center > h3, .main-center{
 	text-align: center;
 	list-style-position: inside;
-  margin: auto;
+	margin: auto;
+	width: 50%;
 }
 div.grid-item > .black > a:link , .black > a:visited{
 	color: black
 }
-ul {
-	text-align: left;
-}
+
 header img {
 	width: 100px;
 	text-align: center;
@@ -28,7 +39,7 @@ header img {
 	height: 50%
 }
  hr {
-	 width: 50%;
+	 width: 30%;
  }
  header > h3 {
 	 font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -39,15 +50,13 @@ header img {
  }
 header > p {
 	margin-top:0;
-
 }
-
 
  .grid-container {
 	display: grid;
   grid-template-columns: auto auto ;
-  padding: 10px;
-	width: 100%;
+  padding: 20px;
+	width: 50%;
   position:absolute;
   color:white;
   top:50%;
@@ -62,8 +71,13 @@ header > p {
 .grid-item {
   background-color: rgba(255, 255, 255);
   border: 5px solid rgba(0, 0, 0, 0.8);
-  padding: 20px;
+  padding: 10px;
   font-size: 30px;
 	text-align: center;
 	color: black;
+}
+
+.floatleft {
+	float: left;
+	width: 40%;
 }
