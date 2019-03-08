@@ -84,7 +84,7 @@ header > p {
 
 .bounce {
 	animation: bounce 2s;
-}
+	animation-iteration-count: 20}
 
 @keyframes bounce {
 	0%,
