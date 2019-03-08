@@ -1,142 +1,40 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
 body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none; 
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-
-/* CUSTOM CSS START */
-.container {
-	margin-top: 30px;
-}
-
-.main-center {
-  position:absolute;
-  color:white;
-  top:20%;
-	left:50%;
-	padding: 0 5px;
-  padding:15px;
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -webkit-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
-
-}
-nav {
-	left: 0;
-	bottom: 0;
-	width: 100%;
-	background-color:grey;
 	color: white;
-	text-align:center;
-	margin: auto;
-}
-body {
-margin: auto;
-background-color: black;
-}
-
-.left {
-	margin-left: 30px;
-	margin-bottom: 10px;
-}
-
-.float {
-	float: left;
+	background: black;
 }
 header {
 	display: block;
-  margin-left: auto;
-  margin-right: auto;
-	width: 50%;
-	color: white;
+  margin: auto;
 	text-align: center;
-	margin-top: 10px;
+	margin-top: 3%;
 	margin-bottom: 30px;
 }
 
 header img {
-	width: 200px;
+	width: 100px;
 	text-align: center;
 	border-radius: 50%;
-	margin: auto;
+	height: 50%
+}
+ hr {
+	 width: 50%;
+ }
+ header > h3 {
+	 font-family: Verdana, Geneva, Tahoma, sans-serif;
+	 margin-bottom: 0;
+} 
+
+header > p {
+	margin-top:0;
 
 }
 
-.highlight {
-	font-weight: 800;
-	text-decoration: underline;
-	line-height: 2em;
-	margin-bottom:10px;
-}
- ul {
-	color : white;
-	margin-left: 20%;
-}
 
-ol {
-	color: white;
-
-}
-section {
-	margin : auto;
-
-	
-}
-footer {
-	position: fixed;
-	left: 0;
-	bottom: 0;
-	background-color:grey;
-	color: white;
-	text-align: center;
-	width: 100%;
-}
-
-.center {
+ .grid-container {
+	display: grid;
+  grid-template-columns: auto auto ;
+  padding: 10px;
 	width: 100%;
   position:absolute;
   color:white;
@@ -148,4 +46,12 @@ footer {
   -webkit-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
 
+} 
+.grid-item {
+  background-color: rgba(255, 255, 255);
+  border: 5px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+	text-align: center;
+	color: black;
 }
