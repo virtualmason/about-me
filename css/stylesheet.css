@@ -98,7 +98,6 @@ header > p {
 .float-right {
 	float: left;
 	width: 40%;
-	clear:right;
 }
 .bounce {
 	animation: bounce 2s;
