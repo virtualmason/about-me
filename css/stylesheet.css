@@ -9,6 +9,10 @@ nav {
 	right: 4%;
 	top: -50px;
 }
+.open-sans {
+font-family: 'Open Sans Condensed', sans-serif;
+
+}
 .email {
 	text-align: center;
 	margin-top: 12%;
