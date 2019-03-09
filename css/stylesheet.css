@@ -28,10 +28,12 @@ header {
 	margin: auto;
 	width: 50%;
 }
-div.grid-item > .black > a:link , .black > a:visited{
+.black {
 	color: black
 }
-
+a { /* or whatever your class */
+	text-decoration: none;
+}
 header img {
 	width: 100px;
 	text-align: center;
@@ -48,6 +50,10 @@ header img {
  .small{
 	 font-size: x-small ;
  }
+ header .small{
+	 margin-top: 10px;
+	font-size: small ;
+}
 header > p {
 	margin-top:0;
 }
@@ -76,15 +82,24 @@ header > p {
 	text-align: center;
 	color: black;
 }
-
-.floatleft {
+.type-face{
+	font-family: Arial, Helvetica, sans-serif;
+}
+.float-left {
 	float: left;
 	width: 40%;
+	clear:left;
 }
 
+.float-right {
+	float: left;
+	width: 40%;
+	clear:right;
+}
 .bounce {
 	animation: bounce 2s;
-	animation-iteration-count: 20}
+	animation-iteration-count: 20
+}
 
 @keyframes bounce {
 	0%,
