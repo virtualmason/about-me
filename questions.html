@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-	
 	<head>
 			<meta charset="UTF-8">
 			<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,11 +15,11 @@
 		<header>
 			<!-- for spacing -->
 		</header>
-		<nav class="top-nav">
+		<nav class="top-nav question">
 			<a href="about.html"> About</a>  <a href="index.html"> Home</a> <a href="#" class="underline">Questions</a>
+			<p class="underline center"><a href="questions.html" class="center" onclick=question()>Click here so I can ask you questions.</a></p>
 		</nav>
-		<p class="underline center"><a href="questions.html"  onclick=question()>Click here so I can ask you questions.</a></p>
-
+		
 		<script type='text/javascript'>
 			function question() {
 				var name = '';
@@ -31,7 +30,6 @@
 				confirm('You tell him: I never spoke to you before in my life!');
 				minutes = prompt('We have spoken before! And you are late! Before we go on is this a 5 minute argument or a 30 minute argument? (write 5 or 30)');
 				insult = prompt('Great you want a ' + minutes + " minute argument! " + " Now that you have paid for last week, I need to to pay for today's session.(write a insult)")
-				
 				confirm('You say listen ' + insult + ' I\'ll pay but the check is in the mail');
 		}
 		</script>
