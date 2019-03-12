@@ -50,6 +50,7 @@ header {
 .underline {
 	text-decoration: underline;
 	font-weight: bold;
+	color: black;
 }
 .grid-item > .black {
   color: black;
