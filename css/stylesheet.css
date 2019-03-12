@@ -13,11 +13,19 @@ nav {
 font-family: 'Open Sans Condensed', sans-serif;
 
 }
+.center > a, .center{
+	text-align: center;
+	color: white;
+	margin-top: 10%;
+}
+
+
 .email {
 	text-align: center;
 	margin-top: 12%;
 	display: relative;
-	right: 500px;
+	right: 50%;
+	color: white;
 }
 header {
 	display: block;
@@ -32,9 +40,29 @@ header {
 	margin: auto;
 	width: 50%;
 }
-.black {
-	color: black
+.top-nav > a:link {
+	color: white;
+	border: white thin solid ;
+	padding: 10px;
+	background-color: white;
 }
+
+.underline {
+	text-decoration: underline;
+	font-weight: bold;
+}
+.grid-item > .black {
+  color: black;
+}
+.grid-item > .black-width{
+	background-color: rgba(255, 255, 255);
+	border: 5px solid rgba(0, 0, 0, 0.8);
+	padding: 10px;
+	font-size: 30px;
+	text-align: center;
+	color: black;
+
+  }
 a { /* or whatever your class */
 	text-decoration: none;
 }
@@ -63,15 +91,15 @@ header > p {
 }
 
  .grid-container {
-	display: grid;
+  display: grid;
   grid-template-columns: auto auto ;
   padding: 20px;
-	width: 50%;
+  width: 50%;
   position:absolute;
   color:white;
   top:50%;
-	left:50%;
-	padding: 0 5px;
+  left:50%;
+  padding: 0 5px;
   padding:15px;
   -ms-transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translate(-50%,-50%);
@@ -83,8 +111,8 @@ header > p {
   border: 5px solid rgba(0, 0, 0, 0.8);
   padding: 10px;
   font-size: 30px;
-	text-align: center;
-	color: black;
+  text-align: center;
+  color: black;
 }
 .type-face{
 	font-family: Arial, Helvetica, sans-serif;

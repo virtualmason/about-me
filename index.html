@@ -11,13 +11,12 @@
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 <body>
-
+<!-- romove id header-->
 	<header>
 		<!--I added image of me and 4 icons to meet requirments-->
 			<img src="img/Floyd2_21.jpg"  alt="face pic">
-			<!--I changed typeface 2x below-->
-
-			<h3 class="type-face">Floyd Orr</h3>
+			<h3 class="type-face">Floyd Orr | <a href="mailto:wfloyd@datetreedigital.com" class="email">Email Me</a>
+			</h3>
 			<hr>
 			<p class="type-face">Fullstack MEARN Software Developer</p>
 			<p class="small">
@@ -43,11 +42,15 @@
 			</a>
 			<p class="small">Project Links </p>
 		</section>
-	</main>
-	<p class="email">floyd@datetreedigital.com</p>
 
-	
-	<script src="js/app.js"></script>
-</body>
+	</main>
+	<div class="container demo-1"> 
+		<div id="large-header" class="large-header"> 
+				<canvas id="demo-canvas"></canvas>
+  </div>
+	<script src="js/TweenLite.min.js"></script>
+	<script src="js/EasePack.min.js"></script>
+	<script src="js/rAF.js"></script>
+	<script src="js/demo-1.js"></script></body>
 </html>
 
