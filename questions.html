@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+	<head>
+			<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<meta http-equiv="X-UA-Compatible" content="ie=edge">
+			<title>Document</title>
+			<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+			<link  rel="stylesheet" href="css/stylesheet.css" />
+	
+			<link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lato" rel="stylesheet">
+			<link href="reset.css" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+			<!-- for spacing -->
+		</header>
+		<nav class="top-nav">
+			<a href="about.html"> About</a>  <a href="index.html"> Home</a> <a href="#" class="underline">Questions</a>
+		</nav>
+		<p class="underline center"><a href="questions.html"  onclick=question()>Click here so I can ask you questions.</a></p>
+
+		<script type='text/javascript'>
+			function question() {
+				var name = '';
+				var minutes = "";
+				var insult ="";
+				name = prompt('Welcome to the argument clinc may I have your name?');
+				alert('Hi '+ name + ' welcome, I told you to come one hour earlier! Why are you late?');
+				confirm('You tell him: I never spoke to you before in my life!');
+				minutes = prompt('We have spoken before! And you are late! Before we go on is this a 5 minute argument or a 30 minute argument? (write 5 or 30)');
+				alert('Great you want a ' + minutes + "minute argument! " + " Now that you have paid for last week I need to to pay for today's session")
+				
+				confirm('You say listen ' + insult + ' I\'ll pay but the check is in the mail');
+		}
+		</script>
+		<div class="container demo-1"> 
+			<div id="large-header" class="large-header"> 
+			<canvas id="demo-canvas"></canvas>
+		</div>
+		<script src="js/TweenLite.min.js"></script>
+		<script src="js/EasePack.min.js"></script>
+		<script src="js/rAF.js"></script>
+	<script src="js/demo-1.js"></script></body>
+</body>
+</html>
