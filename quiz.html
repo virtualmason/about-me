@@ -11,7 +11,6 @@
 
   <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lato" rel="stylesheet">
   <link href="reset.css" rel="stylesheet">
-
 </head>
 
 <body onload='body_onload()'>
@@ -29,7 +28,7 @@
     <main class='flex-container'>
       <section class='left-section'>
         <ol id="answer">
-
+         <li>Your answer will show here</li>
         </ol>
         <!-- <p id='answer'></p> -->
       </section>
@@ -50,24 +49,29 @@
   <script type="text/javascript">
   'use strict'
     function body_onload() {
+      var correct = 0;
       alert('I\'m going to quiz you on me!');
       var answer = document.getElementById('answer');
       //question one
       var name = prompt("What is your name");
       console.log("what is your name", name);
-      var state = prompt(`Hey ${name}, What state is Floyd from? FL, CA, MA, or WA.`);
+      var state = prompt(`Hey ${name}, What is a state is Floyd has lived in? Write the abbreviation?`);
       state.toLowerCase();
-      if (state = 'fl') {
-        var node = document.createElement("LI");
+      var list = ["fl","washington dc","tx"]
+
+      for(var i = 0; i < list.length; i++) {
+        if(state === list[i].toLowerCase()) {
+          var node = document.createElement("LI");
         var textnode = document.createTextNode(`The state Floyd is from is ${state}.`);
         node.appendChild(textnode)
         answer.appendChild(node);
-      } else {
+        correct ++;
+        } else {
         var node = document.createElement("LI");
-        var textnode = document.createTextNode(`Wrong answer about state he is from.`);
+        var textnode = document.createTextNode(`Wrong answer about state he is from. He is from FL, Washington DC or TX`);
         node.appendChild(textnode)
         answer.appendChild(node);
-
+       }
       }
 
       // question two
@@ -79,6 +83,8 @@
         var textnode = document.createTextNode(`Your are right his favorite hobby was skateboarding.`);
         node.appendChild(textnode)
         answer.appendChild(node);
+        correct ++;
+
       } else {
         var node = document.createElement("LI");
         var textnode = document.createTextNode(`Your are wrong his favorite hobby was skateboarding.`);
@@ -94,10 +100,11 @@
         var textnode = document.createTextNode(`Your are right he is certified in ${cert}.`);
         node.appendChild(textnode)
         answer.appendChild(node);
+        correct ++;
+
 
       } else {
         var node = document.createElement("LI");
-
         var textnode = document.createTextNode(`Your are wrong he is certified in ${cert}.`);
         node.appendChild(textnode)
         answer.appendChild(node);
@@ -107,36 +114,100 @@
       pref.toLowerCase();
       if (pref === 'walk') {
         var node = document.createElement("LI");
-        var textnode = document.createTextNode(`Your are right he perfers going for a  ${pref}.`);
+        var textnode = document.createTextNode(`Your are right he prefers going for a  ${pref}.`);
         node.appendChild(textnode)
         answer.appendChild(node);
+        correct ++;
 
       } else {
         var node = document.createElement("LI");
 
-        var textnode = document.createTextNode(`Your are  wrong about what he prefers to do.`);
+        var textnode = document.createTextNode(`Your are  wrong about what he prefers to do. He prefers ${pref}`);
         node.appendChild(textnode)
         answer.appendChild(node);
       }
 
       //question five
-      var watch = prompt(`Hey ${name}, what does Floyd perfer to watch? (baskeball, soccer, MMA, Football).`);
+      var watch = prompt(`Hey ${name}, what does Floyd prefer to watch? (baskeball, soccer, MMA, Football).`);
       console.log("Question 5 watch", watch);
 
       watch.toLowerCase();
       if (watch === 'mma') {
         var node = document.createElement("LI");
-        var textnode = document.createTextNode(`Your are right he perfers watching ${watch}.`);
+        var textnode = document.createTextNode(`Your are right he prefers watching ${watch}.`);
         node.appendChild(textnode)
         answer.appendChild(node);
-        return null;
+        correct ++;
+
       } else {
         var node = document.createElement("LI");
-        var textnode = document.createTextNode(`Your are  wrong about what he prefers to watch.`);
+        var textnode = document.createTextNode(`Your are  wrong about what he prefers to watch.He likes to watch {watch}`);
         node.appendChild(textnode)
         answer.appendChild(node);
-        return null;
+        
       }
+      //question 6 guess a number
+      var guess = 0;
+      var tries = 0;
+      var shirtNum = prompt(`Hey ${name}, what number did Floyd wear on his shirt when he ran track in high school? Choose a number 1 - 10`);
+      console.log("Question 6 shirtnum", typeof shirtNum);
+      while(tries < 5 || shirtNum !== 8) {
+        
+       if(shirtNum === '8' ) {
+        var node = document.createElement("LI");
+        var textnode = document.createTextNode(`Your are right he wore 8.`);
+        node.appendChild(textnode)
+        answer.appendChild(node);
+        tries = 5;
+        correct ++;
+
+        break;
+       } else if (shirtNum < 8) {
+
+        shirtNum =  prompt("too low try again")
+         tries ++
+       }
+          
+       else if(shirtNum > 8) {
+          shirtNum = prompt("too high try again");
+          tries ++;
+          
+       }else {
+        var shirtNum = prompt(`Hey ${name}, nice try but wrong answer try again`);
+        tries ++;
+       
+       }
+
+      }
+      /// question 7
+      var attempt = 0;
+      var country = prompt(`Hey ${name}, what country did Floyd live in as a kid?`);
+      console.log("Question 6 shirtnum", typeof shirtNum);
+      country.toLowerCase();
+      while(attempt < 7 || country !== "korea") {
+        
+       if(country === 'korea' ) {
+        var node = document.createElement("LI");
+        var textnode = document.createTextNode(`Your are right the country is ${country}.`);
+        node.appendChild(textnode)
+        answer.appendChild(node);
+        attempt = 8;
+        correct ++;
+
+        break;
+       } else {
+        var country = prompt(`Hey ${name}, nice try but wrong answer try again`);
+        attempt ++;
+        
+       }
+
+      }
+      var node = document.createElement("LI");
+        var textnode = document.createTextNode(`You got ${correct} answers out of 7.`);
+        node.appendChild(textnode)
+        answer.appendChild(node);
+
+      //remove
       return null;
     }// last
 
