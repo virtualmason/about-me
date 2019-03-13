@@ -11,16 +11,13 @@ nav {
 }
 .open-sans {
   font-family: 'Open Sans Condensed', sans-serif;
-
 }
 
-.right-section {
 
-
+.view {
+	min-width: 25%;
 }
-.left-section {
 
-}
 .center > a, .center{
   text-align: center;
   color: white;
