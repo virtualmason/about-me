@@ -1,217 +1,277 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/stylesheet2.css" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
-  <link rel="stylesheet" href="css/stylesheet2.css" />
-
-  <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lato" rel="stylesheet">
-  <link href="reset.css" rel="stylesheet">
-</head>
-
-<body onload='body_onload()'>
-  <section class='box'>
-    <p>Floyd's</p>
-    <p>P.S.S Page</p>
-    <p>Software Developer</p>
-  </section>
-  <nav class="top-nav">
-    <a href="about.html" class="underline"> About</a>
-    <a href="index.html"> Home</a> <a href="questions.html">Questions</a>
-  </nav>
-  <section class='wrapper'>
-    <h1 class='center'>Floyd's Basic Bio</h1>
-    <main class='flex-container'>
-      <section class='left-section'>
-        <ol id="answer">
-         <li>Your answer will show here</li>
-        </ol>
-        <!-- <p id='answer'></p> -->
-      </section>
-      <aside class='right-section'>
-        <p>My goal is the be the best father, husband, and software developer I can be.<p>
-        <h4>How I plan to do that</h4>
-        <ol>
-          <li>ABC - always be coding</li>
-          <li>Learn things I don't know</li>
-          <li>Be humble</li>
-        </ol>
-      </aside>
-    </main>
-    <nav class='bottom'>
-      <button>1</button><button>2</button><button>3</button>
+    <link
+      href="https://fonts.googleapis.com/css?family=Indie+Flower|Lato"
+      rel="stylesheet"
+    />
+    <link href="reset.css" rel="stylesheet" />
+  </head>
+  <!-- onload="body_onload()" -->
+  <body>
+    <section class="box">
+      <p>Floyd's</p>
+      <p>P.S.S Page</p>
+      <p>Software Developer</p>
+    </section>
+    <nav class="top-nav">
+      <a href="about.html" class="underline"> About</a>
+      <a href="index.html"> Home</a> <a href="questions.html">Questions</a>
     </nav>
-  </section>
-  <script type="text/javascript">
-  'use strict'
-    function body_onload() {
-      var correct = 0;
-      alert('I\'m going to quiz you on me!');
-      var answer = document.getElementById('answer');
+    <section class="wrapper">
+      <h1 class="center">Floyd's Basic Bio</h1>
+      <main class="flex-container">
+        <section class="left-section">
+          <ol id="answer">
+            <li>Your answer will show here</li>
+          </ol>
+          <!-- <p id='answer'></p> -->
+        </section>
+        <aside class="right-section">
+          <p>
+            My goal is the be the best father, husband, and software developer I
+            can be.
+          </p>
+          <p></p>
+          <h4>How I plan to do that</h4>
+          <ol>
+            <li>ABC - always be coding</li>
+            <li>Learn things I don't know</li>
+            <li>Be humble</li>
+          </ol>
+        </aside>
+      </main>
+      <nav class="bottom">
+        <button onClick="nameState()">1</button
+        ><button onClick="hobby()">2</button><button onClick="cert()">3</button
+        ><button onClick="prefer()">4</button
+        ><button onClick="watch()">5</button
+        ><button onClick="number()">6</button
+        ><button onClick="country()">7</button>
+      </nav>
+    </section>
+    <script type="text/javascript">
+      'use strict';
+      // function body_onload() {
       //question one
-      var name = prompt("What is your name");
-      console.log("what is your name", name);
-      var state = prompt(`Hey ${name}, What is a state is Floyd has lived in? Write the abbreviation?`);
-      state.toLowerCase();
-      var list = ["fl","washington dc","tx"]
+      function nameState() {
+        var correct = 0;
+        alert("I'm going to quiz you on me!");
+        var answer = document.getElementById('answer');
+        var name = prompt('What is your name');
+        console.log('what is your name', name);
+        var state = prompt(
+          `Hey ${name}, What is a state is Floyd has lived in? Write the abbreviation?`
+        );
+        state.toLowerCase();
+        var list = ['fl', 'washington dc', 'tx'];
 
-      for(var i = 0; i < list.length; i++) {
-        if(state === list[i].toLowerCase()) {
-          var node = document.createElement("LI");
-        var textnode = document.createTextNode(`The state Floyd is from is ${state}.`);
-        node.appendChild(textnode)
-        answer.appendChild(node);
-        correct ++;
-        } else {
-        var node = document.createElement("LI");
-        var textnode = document.createTextNode(`Wrong answer about state he is from. He is from FL, Washington DC or TX`);
-        node.appendChild(textnode)
-        answer.appendChild(node);
-       }
+        for (var i = 0; i < list.length; i++) {
+          if (state === list[i].toLowerCase()) {
+            var node = document.createElement('LI');
+            var textnode = document.createTextNode(
+              `The state Floyd is from is ${state}.`
+            );
+            node.appendChild(textnode);
+            answer.appendChild(node);
+            correct++;
+          } else {
+            var node = document.createElement('LI');
+            var textnode = document.createTextNode(
+              `Wrong answer about state he is from. He is from FL, Washington DC or TX`
+            );
+            node.appendChild(textnode);
+            answer.appendChild(node);
+          }
+        }
       }
 
       // question two
-      var hobby = prompt(`Hey ${name}, What was Floyds favorit hobby when he grew up on a military base as a kid? skateboarding, cooking, shooting or hunting?`);
-      hobby.toLowerCase();
-      if (hobby === 'skateboarding') {
-        console.log("Question 2 hobby", hobby);
-        var node = document.createElement("LI");
-        var textnode = document.createTextNode(`Your are right his favorite hobby was skateboarding.`);
-        node.appendChild(textnode)
-        answer.appendChild(node);
-        correct ++;
 
-      } else {
-        var node = document.createElement("LI");
-        var textnode = document.createTextNode(`Your are wrong his favorite hobby was skateboarding.`);
-        node.appendChild(textnode)
-        answer.appendChild(node);
+      function hobby() {
+        var hobby = prompt(
+          `Hey ${name}, What was Floyds favorit hobby when he grew up on a military base as a kid? skateboarding, cooking, shooting or hunting?`
+        );
+        hobby.toLowerCase();
+        if (hobby === 'skateboarding') {
+          console.log('Question 2 hobby', hobby);
+          var node = document.createElement('LI');
+          var textnode = document.createTextNode(
+            `Your are right his favorite hobby was skateboarding.`
+          );
+          node.appendChild(textnode);
+          answer.appendChild(node);
+          correct++;
+        } else {
+          var node = document.createElement('LI');
+          var textnode = document.createTextNode(
+            `Your are wrong his favorite hobby was skateboarding.`
+          );
+          node.appendChild(textnode);
+          answer.appendChild(node);
+        }
       }
-      var cert = prompt(`Hey ${name}, What is Floyd certified in? Google advertising, project management, scrum? `);
-      cert.toLowerCase();
+
       // question three
 
-      if (cert === 'google advertising') {
-        var node = document.createElement("LI");
-        var textnode = document.createTextNode(`Your are right he is certified in ${cert}.`);
-        node.appendChild(textnode)
-        answer.appendChild(node);
-        correct ++;
+      function cert() {
+        var cert = prompt(
+          `Hey ${name}, What is Floyd certified in? Google advertising, project management, scrum? `
+        );
+        cert.toLowerCase();
 
-
-      } else {
-        var node = document.createElement("LI");
-        var textnode = document.createTextNode(`Your are wrong he is certified in ${cert}.`);
-        node.appendChild(textnode)
-        answer.appendChild(node);
+        if (cert === 'google advertising') {
+          var node = document.createElement('LI');
+          var textnode = document.createTextNode(
+            `Your are right he is certified in ${cert}.`
+          );
+          node.appendChild(textnode);
+          answer.appendChild(node);
+          correct++;
+        } else {
+          var node = document.createElement('LI');
+          var textnode = document.createTextNode(
+            `Your are wrong he is certified in ${cert}.`
+          );
+          node.appendChild(textnode);
+          answer.appendChild(node);
+        }
       }
+
       //question four
-      var pref = prompt(`Hey ${name}, What does Floyd prefer? Going out for a (drink, eat, dancing or  walk?`);
-      pref.toLowerCase();
-      if (pref === 'walk') {
-        var node = document.createElement("LI");
-        var textnode = document.createTextNode(`Your are right he prefers going for a  ${pref}.`);
-        node.appendChild(textnode)
-        answer.appendChild(node);
-        correct ++;
 
-      } else {
-        var node = document.createElement("LI");
+      function prefer() {
+        var pref = prompt(
+          `Hey ${name}, What does Floyd prefer? Going out for a (drink, eat, dancing or  walk?`
+        );
+        pref.toLowerCase();
+        if (pref === 'walk') {
+          var node = document.createElement('LI');
+          var textnode = document.createTextNode(
+            `Your are right he prefers going for a  ${pref}.`
+          );
+          node.appendChild(textnode);
+          answer.appendChild(node);
+          correct++;
+        } else {
+          var node = document.createElement('LI');
 
-        var textnode = document.createTextNode(`Your are  wrong about what he prefers to do. He prefers ${pref}`);
-        node.appendChild(textnode)
-        answer.appendChild(node);
+          var textnode = document.createTextNode(
+            `Your are  wrong about what he prefers to do. He prefers ${pref}`
+          );
+          node.appendChild(textnode);
+          answer.appendChild(node);
+        }
       }
 
       //question five
-      var watch = prompt(`Hey ${name}, what does Floyd prefer to watch? (baskeball, soccer, MMA, Football).`);
-      console.log("Question 5 watch", watch);
 
-      watch.toLowerCase();
-      if (watch === 'mma') {
-        var node = document.createElement("LI");
-        var textnode = document.createTextNode(`Your are right he prefers watching ${watch}.`);
-        node.appendChild(textnode)
-        answer.appendChild(node);
-        correct ++;
+      function watch() {
+        var watch = prompt(
+          `Hey ${name}, what does Floyd prefer to watch? (baskeball, soccer, MMA, Football).`
+        );
+        console.log('Question 5 watch', watch);
 
-      } else {
-        var node = document.createElement("LI");
-        var textnode = document.createTextNode(`Your are  wrong about what he prefers to watch.He likes to watch {watch}`);
-        node.appendChild(textnode)
-        answer.appendChild(node);
-        
+        watch.toLowerCase();
+        if (watch === 'mma') {
+          var node = document.createElement('LI');
+          var textnode = document.createTextNode(
+            `Your are right he prefers watching ${watch}.`
+          );
+          node.appendChild(textnode);
+          answer.appendChild(node);
+          correct++;
+        } else {
+          var node = document.createElement('LI');
+          var textnode = document.createTextNode(
+            `Your are  wrong about what he prefers to watch.He likes to watch {watch}`
+          );
+          node.appendChild(textnode);
+          answer.appendChild(node);
+        }
       }
       //question 6 guess a number
-      var guess = 0;
-      var tries = 0;
-      var shirtNum = prompt(`Hey ${name}, what number did Floyd wear on his shirt when he ran track in high school? Choose a number 1 - 10`);
-      console.log("Question 6 shirtnum", typeof shirtNum);
-      while(tries < 5 || shirtNum !== 8) {
-        
-       if(shirtNum === '8' ) {
-        var node = document.createElement("LI");
-        var textnode = document.createTextNode(`Your are right he wore 8.`);
-        node.appendChild(textnode)
-        answer.appendChild(node);
-        tries = 5;
-        correct ++;
 
-        break;
-       } else if (shirtNum < 8) {
+      function number() {
+        var guess = 0;
+        var tries = 0;
+        var shirtNum = prompt(
+          `Hey ${name}, what number did Floyd wear on his shirt when he ran track in high school? Choose a number 1 - 10`
+        );
+        console.log('Question 6 shirtnum', typeof shirtNum);
+        while (tries < 5 || shirtNum !== 8) {
+          if (shirtNum === '8') {
+            var node = document.createElement('LI');
+            var textnode = document.createTextNode(`Your are right he wore 8.`);
+            node.appendChild(textnode);
+            answer.appendChild(node);
+            tries = 5;
+            correct++;
 
-        shirtNum =  prompt("too low try again")
-         tries ++
-       }
-          
-       else if(shirtNum > 8) {
-          shirtNum = prompt("too high try again");
-          tries ++;
-          
-       }else {
-        var shirtNum = prompt(`Hey ${name}, nice try but wrong answer try again`);
-        tries ++;
-       
-       }
-
+            break;
+          } else if (shirtNum < 8) {
+            shirtNum = prompt('too low try again');
+            tries++;
+          } else if (shirtNum > 8) {
+            shirtNum = prompt('too high try again');
+            tries++;
+          } else {
+            var shirtNum = prompt(
+              `Hey ${name}, nice try but wrong answer try again`
+            );
+            tries++;
+          }
+        }
       }
       /// question 7
-      var attempt = 0;
-      var country = prompt(`Hey ${name}, what country did Floyd live in as a kid?`);
-      console.log("Question 6 shirtnum", typeof shirtNum);
-      country.toLowerCase();
-      while(attempt < 7 || country !== "korea") {
-        
-       if(country === 'korea' ) {
-        var node = document.createElement("LI");
-        var textnode = document.createTextNode(`Your are right the country is ${country}.`);
-        node.appendChild(textnode)
+      function country() {
+        var attempt = 0;
+        var country = prompt(
+          `Hey ${name}, what country did Floyd live in as a kid?`
+        );
+        console.log('Question 6 shirtnum', typeof shirtNum);
+        country.toLowerCase();
+        // || country !== 'korea'
+        while (attempt < 7) {
+          if (country === 'korea') {
+            var node = document.createElement('LI');
+            var textnode = document.createTextNode(
+              `Your are right the country is ${country}.`
+            );
+            node.appendChild(textnode);
+            answer.appendChild(node);
+            attempt = 8;
+            correct++;
+
+            break;
+          } else {
+            country = prompt(
+              `Hey ${name}, nice try but wrong answer try again`
+            );
+            attempt++;
+          }
+        }
+        var node = document.createElement('LI');
+        var textnode = document.createTextNode(
+          `You got ${correct} answers out of 7.`
+        );
+        node.appendChild(textnode);
         answer.appendChild(node);
-        attempt = 8;
-        correct ++;
 
-        break;
-       } else {
-        var country = prompt(`Hey ${name}, nice try but wrong answer try again`);
-        attempt ++;
-        
-       }
-
-      }
-      var node = document.createElement("LI");
-        var textnode = document.createTextNode(`You got ${correct} answers out of 7.`);
-        node.appendChild(textnode)
-        answer.appendChild(node);
-
-      //remove
-      return null;
-    }// last
-
-  </script>
-</body>
-
+        //remove
+        return null;
+      } // last
+      // }
+    </script>
+  </body>
 </html>
