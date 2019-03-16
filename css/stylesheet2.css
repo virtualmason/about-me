@@ -1,38 +1,46 @@
 *,html {
   box-sizing: border-box;
 }
+
 .left-section > ol  {
   list-style-position: inside;
   text-align: left;
 }
+
+.heavy {
+  font-weight: bold;
+}
 .active {
   background: lightgreen;
-
 }
+
 .underline {
   text-decoration: underline;
   font-weight: bold;
   color: black;
 }
+
 body {
   width : 100vw;
   height: 100vh;
   background: grey;
   border-radius: 100px 100px;
-  font-family: "Courier New", Courier, monospace	
-;
+  font-family: "Courier New", Courier, monospace;
 }
+
 nav {
   text-align: center;
   position: relative;
   top: 30px;
 }
+
 .top-nav > a:link {
   color: white;
   border: white thin solid ;
   padding: 10px;
   background-color: white;
 }
+
 .wrapper {
   background: white;
   position:absolute;
@@ -40,14 +48,16 @@ nav {
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 15px 15px 15px 15px;
+  margin-top: 20px;
 }
+
 .bottom {
 	width:40%;;
 }
+
 .flex-container {
 	display: flex;
   justify-content: space-around;
-
 }
 
 .center {
@@ -60,10 +70,10 @@ nav {
   color: white;
   border-radius: 20px 20px 20px 20px;
 }
+
 .right-section {
   width: 40%;
-  height: 50%;
-
+  height: 40%;
 }
 
 .left-section {
@@ -74,5 +84,4 @@ nav {
   margin-left: 3%;
   padding: 0;
   text-align: center;
-  
 }
