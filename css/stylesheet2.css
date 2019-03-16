@@ -5,6 +5,15 @@
   list-style-position: inside;
   text-align: left;
 }
+.active {
+  background: lightgreen;
+
+}
+.underline {
+  text-decoration: underline;
+  font-weight: bold;
+  color: black;
+}
 body {
   width : 100vw;
   height: 100vh;
@@ -60,7 +69,7 @@ nav {
 .left-section {
   width: 60%;
   height: 50%;
-  background-color: pink;
+  background-color: lightgreen;
   margin-right: 3%;
   margin-left: 3%;
   padding: 0;
