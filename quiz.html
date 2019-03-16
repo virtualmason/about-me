@@ -29,11 +29,11 @@
       <a href="index.html"> Home</a> <a href="questions.html">Questions</a>
     </nav>
     <section class="wrapper">
-      <h1 class="center">Floyd's Basic Bio</h1>
+      <h1 class="center">Floyd's Basic Bio Anser Questions To Learn About Him</h1>
       <main class="flex-container">
         <section class="left-section">
           <ol id="answer">
-            <li>Your answer will show here</li>
+            <li>Click Buttons Below</li>
           </ol>
           <!-- <p id='answer'></p> -->
         </section>
@@ -64,8 +64,9 @@
       'use strict';
       // function body_onload() {
       //question one
+      var correct = 0;
+
       function nameState() {
-        var correct = 0;
         alert("I'm going to quiz you on me!");
         var answer = document.getElementById('answer');
         var name = prompt('What is your name');
@@ -80,7 +81,7 @@
           if (state === list[i].toLowerCase()) {
             var node = document.createElement('LI');
             var textnode = document.createTextNode(
-              `The state Floyd is from is ${state}.`
+              `Correct: The state Floyd is from is ${state}.`
             );
             node.appendChild(textnode);
             answer.appendChild(node);
@@ -88,12 +89,13 @@
           } else {
             var node = document.createElement('LI');
             var textnode = document.createTextNode(
-              `Wrong answer about state he is from. He is from FL, Washington DC or TX`
+              `Wrong: The answer about state he is from. He is from FL, Washington DC or TX`
             );
             node.appendChild(textnode);
             answer.appendChild(node);
           }
         }
+        
       }
 
       // question two
@@ -107,7 +109,7 @@
           console.log('Question 2 hobby', hobby);
           var node = document.createElement('LI');
           var textnode = document.createTextNode(
-            `Your are right his favorite hobby was skateboarding.`
+            `Correct: His favorite hobby was skateboarding.`
           );
           node.appendChild(textnode);
           answer.appendChild(node);
@@ -115,7 +117,7 @@
         } else {
           var node = document.createElement('LI');
           var textnode = document.createTextNode(
-            `Your are wrong his favorite hobby was skateboarding.`
+            `Wrong: His favorite hobby was skateboarding.`
           );
           node.appendChild(textnode);
           answer.appendChild(node);
@@ -133,7 +135,7 @@
         if (cert === 'google advertising') {
           var node = document.createElement('LI');
           var textnode = document.createTextNode(
-            `Your are right he is certified in ${cert}.`
+            `Correct: He is certified in ${cert}.`
           );
           node.appendChild(textnode);
           answer.appendChild(node);
@@ -141,7 +143,7 @@
         } else {
           var node = document.createElement('LI');
           var textnode = document.createTextNode(
-            `Your are wrong he is certified in ${cert}.`
+            `Wrong: He is certified in ${cert}.`
           );
           node.appendChild(textnode);
           answer.appendChild(node);
@@ -158,7 +160,7 @@
         if (pref === 'walk') {
           var node = document.createElement('LI');
           var textnode = document.createTextNode(
-            `Your are right he prefers going for a  ${pref}.`
+            `Correct: He prefers going for a  ${pref}.`
           );
           node.appendChild(textnode);
           answer.appendChild(node);
@@ -167,7 +169,7 @@
           var node = document.createElement('LI');
 
           var textnode = document.createTextNode(
-            `Your are  wrong about what he prefers to do. He prefers ${pref}`
+            `Wrong: wrong about what he prefers to do. He prefers ${pref}`
           );
           node.appendChild(textnode);
           answer.appendChild(node);
@@ -186,7 +188,7 @@
         if (watch === 'mma') {
           var node = document.createElement('LI');
           var textnode = document.createTextNode(
-            `Your are right he prefers watching ${watch}.`
+            `Correct: He prefers watching ${watch}.`
           );
           node.appendChild(textnode);
           answer.appendChild(node);
@@ -194,7 +196,7 @@
         } else {
           var node = document.createElement('LI');
           var textnode = document.createTextNode(
-            `Your are  wrong about what he prefers to watch.He likes to watch {watch}`
+            `Wrong: He prefers to watch.He likes to watch {watch}`
           );
           node.appendChild(textnode);
           answer.appendChild(node);
@@ -246,7 +248,7 @@
           if (country === 'korea') {
             var node = document.createElement('LI');
             var textnode = document.createTextNode(
-              `Your are right the country is ${country}.`
+              `Correct: The country is ${country}.`
             );
             node.appendChild(textnode);
             answer.appendChild(node);
