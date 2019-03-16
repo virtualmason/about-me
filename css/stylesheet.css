@@ -4,7 +4,11 @@ body {
   background: black;
 }
 
+.subheading {
+  margin-top: 1%;
+  margin-bottom: 1%;
 
+}
 /* About Me Page */
 nav {
   text-align: center;
