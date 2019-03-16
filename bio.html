@@ -99,6 +99,7 @@
             node.appendChild(textnode);
             answer.appendChild(node);
             correct++;
+            break;
           } else {
             var node = document.createElement('LI');
             var textnode = document.createTextNode(
@@ -164,7 +165,7 @@
         } else {
           var node = document.createElement('LI');
           var textnode = document.createTextNode(
-            `Wrong: He is certified in ${cert}.`
+            `Wrong: He is certified in Google Advertising.`
           );
           node.appendChild(textnode);
           answer.appendChild(node);
@@ -179,13 +180,13 @@
         element = document.getElementById("five");
         element.classList.add("active");
         var pref = prompt(
-          `Hey ${name}, What does Floyd prefer? Going out for a (drink, eat, dancing or  walk?`
+          `Hey ${name}, What does Floyd prefer? Going out for a (drink, eat, dancing or walk?`
         );
         pref.toLowerCase();
         if (pref === 'walk') {
           var node = document.createElement('LI');
           var textnode = document.createTextNode(
-            `Correct: He prefers going for a  ${pref}.`
+            `Correct: He prefers going for a walk.`
           );
           node.appendChild(textnode);
           answer.appendChild(node);
@@ -194,7 +195,7 @@
           var node = document.createElement('LI');
 
           var textnode = document.createTextNode(
-            `Wrong: wrong about what he prefers to do. He prefers ${pref}`
+            `Wrong: He prefers going for a walk.`
           );
           node.appendChild(textnode);
           answer.appendChild(node);
@@ -247,7 +248,7 @@
         while (tries < 5 || shirtNum !== 8) {
           if (shirtNum === '8') {
             var node = document.createElement('LI');
-            var textnode = document.createTextNode(`Your are right he wore 8.`);
+            var textnode = document.createTextNode(`Your are right he wore the number eight.`);
             node.appendChild(textnode);
             answer.appendChild(node);
             tries = 5;
