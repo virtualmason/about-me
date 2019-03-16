@@ -12,6 +12,7 @@
 .underline {
   text-decoration: underline;
   font-weight: bold;
+  color: black;
 }
 body {
   width : 100vw;
