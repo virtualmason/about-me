@@ -3,6 +3,9 @@ body {
   color: white;
   background: black;
 }
+
+
+/* About Me Page */
 nav {
   text-align: center;
   position: relative;
@@ -11,7 +14,6 @@ nav {
 .open-sans {
   font-family: 'Open Sans Condensed', sans-serif;
 }
-
 
 .view {
 	min-width: 25%;
@@ -70,7 +72,6 @@ nav :nth-child(4n) {
   font-size: 30px;
   text-align: center;
   color: black;
-
   }
 a {
   text-decoration: none;
@@ -89,15 +90,9 @@ header img {
    margin-bottom: 0;
 } 
  .small{
-   font-size: x-small ;
+   font-size: small ;
  }
- header .small{
-   margin-top: 10px;
-  font-size: small ;
-}
-header > p {
-  margin-top:0;
-}
+
 
  .grid-container {
   display: grid;
@@ -106,7 +101,7 @@ header > p {
   width: 50%;
   position:absolute;
   color:white;
-  top:50%;
+  top:40%;
   left:50%;
   padding: 0 5px;
   padding:15px;

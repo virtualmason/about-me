@@ -34,7 +34,7 @@
         <section id="left-section">
           <ol id="answer">
           </ol>
-          <!-- <p id='answer'></p> -->
+
         </section>
         <aside class="right-section">
           <p>
@@ -62,13 +62,17 @@
     <script type="text/javascript">
       'use strict';
 
+      // This function changes the background of answers to green
+      document.addEventListener("click", function(){
+      document.getElementById("left-section").classList.add("left-section");
+});
       var correct = 0;
       var element = document.getElementById("one");
       element.classList.add("active");
 
       function nameState() {
         element = document.getElementById("one");
-         element.classList.remove("active");
+        element.classList.remove("active");
         element = document.getElementById("two");
         element.classList.add("active");
         alert("I'm going to quiz you on me!");
@@ -79,13 +83,13 @@
           `Hey ${name}, What is a state is Floyd has lived in? Write the abbreviation?`
         );
         state.toLowerCase();
-        var list = ['fl', 'washington dc', 'tx'];
+        var list = ['fl', 'dc', 'tx'];
 
         for (var i = 0; i < list.length; i++) {
           if (state === list[i].toLowerCase()) {
             var node = document.createElement('LI');
             var textnode = document.createTextNode(
-              `Correct: The state Floyd is from is ${state}.`
+              `Correct: A state Floyd has lived in is ${state.toLocaleUpperCase()}.`
             );
             node.appendChild(textnode);
             answer.appendChild(node);
@@ -93,7 +97,7 @@
           } else {
             var node = document.createElement('LI');
             var textnode = document.createTextNode(
-              `Wrong: The answer about state he is from. He is from FL, Washington DC or TX`
+              `Wrong: The answer about state he is from. He is from FL, DC or TX`
             );
             node.appendChild(textnode);
           }
@@ -109,7 +113,7 @@
         element.classList.add("active");
 
         var hobby = prompt(
-          `Hey ${name}, What was Floyds favorit hobby when he grew up on a military base as a kid? skateboarding, cooking, shooting or hunting?`
+          `Hey ${name}, What was Floyd's favorit hobby when he grew up on a military base as a kid? skateboarding, cooking, shooting or hunting?`
         );
         hobby.toLowerCase();
         if (hobby === 'skateboarding') {
