@@ -57,14 +57,20 @@ a:link {
   font-weight: bold;
   color: black;
 }
+a:link {
+  color :black
+}
 
-.top-nav {
+a {
+  color:black;
+}
+.top-nav  {
   margin-top: 5%;
 }
 
 .top-nav > a:link {
-  color: white;
-  border: white thin solid ;
+  color: black;
+  border: black thin solid ;
   padding: 10px;
   background-color: white;
 }
