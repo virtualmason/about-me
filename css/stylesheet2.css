@@ -11,6 +11,9 @@ body {
   font-family: Arial;
 }
 
+.right-section {
+  padding: 2%;
+}
 a:visited {
   color: black;
 }
@@ -18,9 +21,11 @@ a:visited {
 a {
   color: black;
 }
+
 a:link {
   color: black;
 }
+
 .wrapper {
   min-width: 40%;
   /* margin-top: 30%; */
@@ -80,11 +85,11 @@ nav {
   margin-top: 3%;
   color: lightblue;
 }
+
 .bottom {
   margin-top: 1%;
   padding: 5%;
   z-index: 1;
-  
 }
 
 .center {
@@ -95,29 +100,5 @@ nav {
   text-align: center;
   line-height: 1em;
   color: white;
-}
-
-
-#bounce {
-  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
-  transform: translate3d(0, 0, 0);
-  perspective: 1000px;
-}
-
-@keyframes shake {
-  10%, 90% {
-    transform: translate3d(-1px, 0, 0);
-  }
-
-  20%, 80% {
-    transform: translate3d(2px, 0, 0);
-  }
-
-  30%, 50%, 70% {
-    transform: translate3d(-4px, 0, 0);
-  }
-
-  40%, 60% {
-    transform: translate3d(4px, 0, 0);
-  }
+  padding-top: 1%;
 }
