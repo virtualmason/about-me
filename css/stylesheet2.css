@@ -2,19 +2,40 @@
   box-sizing: border-box;
 }
 
+body {
+  width : 100vw;
+  height: 100vh;
+  background: grey;
+  border-radius: 100px 100px;
+  overflow: scroll;
+  font-family: "Courier New", Courier, monospace;
+}
+
+
 .wrapper {
   min-width: 40%;
+  /* margin-top: 30%; */
+  border-radius: 20px 20px 20px 20px;
+
 }
+
 .left-section > ol  {
   list-style-position: inside;
-  text-align: left;
+  border-radius: 20px;
 }
 
 .heavy {
   font-weight: bold;
 }
+
 .active {
   background: lightgreen;
+}
+
+.aboveButtons{
+  margin-top: 2%;
+  margin-bottom: 2%;
+
 }
 
 .underline {
@@ -23,18 +44,8 @@
   color: black;
 }
 
-body {
-  width : 100vw;
-  height: 100vh;
-  background: grey;
-  border-radius: 100px 100px;
-  font-family: "Courier New", Courier, monospace;
-}
-
-nav {
-  text-align: center;
-  position: relative;
-  top: 30px;
+.top-nav {
+  margin-top: 5%;
 }
 
 .top-nav > a:link {
@@ -43,24 +54,28 @@ nav {
   padding: 10px;
   background-color: white;
 }
+nav {
+  text-align: center;
+}
 
-.wrapper {
+ .wrapper {
   background: white;
   position:absolute;
-  top:50%;
+  top:55%;
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 15px 15px 15px 15px;
-  margin-top: 20px;
-}
+} 
 
+.answer {
+  margin-top: 3%;
+  color: lightgreen;
+}
 .bottom {
-	width:40%;;
-}
-
-.flex-container {
-	display: flex;
-  justify-content: space-around;
+  margin-top: 1%;
+  padding: 5%;
+  z-index: 1;
+  
 }
 
 .center {
@@ -69,22 +84,31 @@ nav {
 
 .box {
   text-align: center;
-  line-height: .5em;
+  line-height: 1em;
   color: white;
-  border-radius: 20px 20px 20px 20px;
 }
 
-.right-section {
-  width: 40%;
-  height: 40%;
+
+#bounce {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  perspective: 1000px;
 }
 
-.left-section {
-  width: 60%;
-  height: 50%;
-  background-color: lightgreen;
-  margin-right: 3%;
-  margin-left: 3%;
-  padding: 0;
-  text-align: center;
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
 }

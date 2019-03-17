@@ -9,13 +9,14 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/stylesheet2.css" />
+    
 
     <link
       href="https://fonts.googleapis.com/css?family=Indie+Flower|Lato"
       rel="stylesheet"
     />
-    <link href="reset.css" rel="stylesheet" />
+    <link href="css/reset.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/stylesheet2.css" />
   </head>
   <!-- onload="body_onload()" -->
   <body>
@@ -28,42 +29,46 @@
       <a href="about.html"> Video</a>
       <a href="index.html"> Home</a> <a href="bio.html" class="underline">Bio</a>
     </nav>
+  
+  </section>
+  
     <section class="wrapper">
-      <h1 class="center">Click Every <span class="active">lightgreen</span> Button Below&#x2B07;</h1>
       <main class="flex-container">
-        <section id="left-section">
-          <ol id="answer">
-          </ol>
-
+        <section class="left-section">
+            <nav class="bottom">
+                <h1 class="aboveButtons">Click <span id="bounce">&#8681;</span> Any Lightgreen Button </h1>
+                <button  onClick="nameState()" id="one">1</button>
+                <button onClick="hobby()" id="two">2</button>
+                <button onClick="cert()" id="three">3</button>
+                <button onClick="prefer()" id ="four">4</button>
+                <button onClick="watch()" id="five">5</button>
+                <button onClick="number()" id="six">6</button>
+                <button onClick="country()" id="seven">7</button>
+                <ol id="answer" class="answer">
+                  </ol>
+              </nav>
+         
+          
         </section>
         <aside class="right-section">
           <p>
-            My <span class="heavy">goal</span> is the be the best father, husband, and software developer I
-            can be.<a href= "https://www.amazon.com/Salespeople-Stop-Getting-Punked-Prospects/dp/1549566369" target="_blank">Check out my sales book.</a>
-          </p>
-          <h4>How I plan to be the best dev:</h4>
-          <ol>
-            <li>ABC - always be coding</li>
-            <li>Learn things I don't know</li>
-            <li>Be humble</li>
-          </ol>        
-          <h4>Development experience with:</h4>
+            <span class="heavy">Goal</span>,be the best father, husband, and software developer. ABC - Always Be Coding to become elite.
+          </p>   
+           <br />
+          <h1>Development experience with:</h1>
+          <ul>
           <li>Fabpro(current)</li>
           <li>Balfour</li>
           <li>ArsonalOS</li>  
           <li>Business Rate</li>
+        </ul>
+        <br/>
+        <h4>Startup Sales Consultant</h4>
+         <a href = "https://www.amazon.com/Salespeople-Stop-Getting-Punked-Prospects/dp/1549566369">Check out my sales book on Amazon</a>
+
         </aside>
       </main>
-      <nav class="bottom">
-        <button  onClick="nameState()" id="one">1</button>
-        <button onClick="hobby()" id="two">2</button>
-        <button onClick="cert()" id="three">3</button>
-        <button onClick="prefer()" id ="four">4</button>
-        <button onClick="watch()" id="five">5</button>
-        <button onClick="number()" id="six">6</button>
-        <button onClick="country()" id="seven">7</button>
-      </nav>
-    </section>
+      
     <script type="text/javascript">
       'use strict';
 
