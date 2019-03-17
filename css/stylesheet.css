@@ -1,9 +1,14 @@
 
-body {
-  color: white;
-  background: black;
-}
 
+body {
+  width : 100vw;
+  height: 100vh;
+  background: grey; 
+  border-radius: 100px 100px;
+  overflow: scroll;
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+}
 .subheading {
   color: grey;
   margin-top : 1%;
@@ -11,8 +16,10 @@ body {
 /* About Me Page */
 nav {
   text-align: center;
-  position: relative;
-  top: -50px;
+}
+
+.top-nav {
+  margin-top: 1%;
 }
 .open-sans {
   font-family: 'Open Sans Condensed', sans-serif;
@@ -45,8 +52,7 @@ header {
 .main-center > h3, .main-center{
   text-align: center;
   list-style-position: inside;
-  margin: auto;
-  width: 50%;
+   margin: auto; */
 }
 
 nav :nth-child(4n) {
@@ -54,7 +60,7 @@ nav :nth-child(4n) {
 }
 
 .top-nav > a:link {
-  color: white;
+  color: black;
   border: white thin solid ;
   padding: 10px;
   background-color: white;
@@ -65,9 +71,15 @@ nav :nth-child(4n) {
   font-weight: bold;
   color: black;
 }
-.grid-item > .black {
+.underline-one {
+  text-decoration: underline;
+  font-weight: bold;
   color: black;
 }
+.grid-item > .black {
+  color: white;
+}
+
 .grid-item > .black-width{
   background-color: rgba(255, 255, 255);
   border: 5px solid rgba(0, 0, 0, 0.8);
@@ -81,6 +93,9 @@ a {
   text-decoration: none;
 }
 
+.video {
+  margin-top: 5%;
+}
 header img {
   width: 100px;
   text-align: center;
@@ -117,13 +132,17 @@ header img {
   transform: translate(-50%,-50%);
 
 } 
+.grid-item > .black {
+  color: black;
+}
+
 .grid-item {
   background-color: rgba(255, 255, 255);
   border: 5px solid rgba(0, 0, 0, 0.8);
   padding: 10px;
   font-size: 30px;
   text-align: center;
-  color: black;
+  /* color: black; */
 }
 
 .type-face{
