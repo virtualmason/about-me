@@ -249,7 +249,7 @@
           `Hey${name}, what number did Floyd wear on his shirt when he ran track in high school? Choose a number 1 - 10. (5 attemtps)`
         );
 
-        while (tries <= 6 ) {
+        while (tries <= 4 ) {
           if (shirtNum === '8') {
             tries++;
             var node = document.createElement('LI');
@@ -258,13 +258,13 @@
             answer.appendChild(node);
             correct++;
             break;
-          } else if (shirtNum < 8 && tries <  5) {
+          } else if (shirtNum < 8 && tries <  4) {
             tries++;
             shirtNum = prompt(`too low try again. (${tries} attempts out of 5)`);
-          } else if (shirtNum > 8 && tries < 5) {
+          } else if (shirtNum > 8 && tries < 4) {
             tries++;
             shirtNum = prompt(`too high try again.(${tries} attempts out of 5)`);
-          } else if (tries === 5) {
+          } else if (tries === 4 && shirtNum !== '8') {
             tries++;
             var node = document.createElement('LI');
             var textnode = document.createTextNode(`Wrong: Your are wrong he wore the number eight. ${tries} attempts out of 5`);
@@ -284,8 +284,8 @@
           `Hey${name}, what country did Floyd live in as a kid? (5 attempts)`
         );
         country.toLowerCase();
-        while (attempt <= 6) {
-          if(country !== "korea" && attempt <= 5){
+        while (attempt <= 5) {
+          if(country !== "korea" && attempt < 5){
             console.log(289)
             attempt++;
             country = prompt(
