@@ -251,6 +251,7 @@
 
         while (tries <= 4 ) {
           if (shirtNum === '8') {
+            console.log(254)
             tries++;
             var node = document.createElement('LI');
             var textnode = document.createTextNode(`Your are right he wore the number eight. ${tries} attempts out of 5`);
@@ -258,13 +259,19 @@
             answer.appendChild(node);
             correct++;
             break;
-          } else if (shirtNum < 8 && tries <  4) {
+          } else if (shirtNum < '8' && tries <  4) {
+            console.log(263)
+
             tries++;
             shirtNum = prompt(`too low try again. (${tries} attempts out of 5)`);
-          } else if (shirtNum > 8 && tries < 4) {
+          } else if (shirtNum > '8' && tries < 4) {
+            console.log(269)
+
             tries++;
             shirtNum = prompt(`too high try again.(${tries} attempts out of 5)`);
-          } else if (tries === 4 && shirtNum !== '8') {
+          } else  {
+            console.log(273)
+
             tries++;
             var node = document.createElement('LI');
             var textnode = document.createTextNode(`Wrong: Your are wrong he wore the number eight. ${tries} attempts out of 5`);
