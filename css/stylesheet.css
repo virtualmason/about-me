@@ -27,7 +27,7 @@ a:link {
   color: black;
 }
 .top-nav {
-  margin-top: 1%;
+  margin-top: 5%;
 }
 .open-sans {
   font-family: Arial;
@@ -162,6 +162,13 @@ header img {
 
 .type-face{
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.box {
+  text-align: center;
+  line-height: 1em;
+  color: white;
+  padding-top: 1%;
 }
 
 .float-left {
