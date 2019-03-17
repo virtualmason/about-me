@@ -9,6 +9,10 @@ body {
   font-family: "Courier New", Courier, monospace;
   color: white;
 }
+
+a:visited {
+  color: black;
+}
 .subheading {
   color: grey;
   margin-top : 1%;
@@ -17,7 +21,9 @@ body {
 nav {
   text-align: center;
 }
-
+a:link {
+  color: black;
+}
 .top-nav {
   margin-top: 1%;
 }
