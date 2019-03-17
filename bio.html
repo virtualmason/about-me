@@ -94,16 +94,16 @@
         );
         state.toLowerCase();
         var list = ['fl', 'dc', 'tx'];
-
         for (var i = 0; i < list.length; i++) {
           if (state === list[i].toLowerCase()) {
             var node = document.createElement('LI');
             var textnode = document.createTextNode(
               `Correct: A state Floyd has lived in is ${state.toLocaleUpperCase()}.`
             );
+            correct++;
+
             node.appendChild(textnode);
             answer.appendChild(node);
-            correct++;
             break;
           } else {
             var node = document.createElement('LI');
@@ -243,27 +243,35 @@
         element.classList.remove("active");
         element = document.getElementById("seven");
         element.classList.add("active");
-        var guess = 0;
+        
         var tries = 0;
         var shirtNum = prompt(
-          `Hey${name}, what number did Floyd wear on his shirt when he ran track in high school? Choose a number 1 - 10`
+          `Hey${name}, what number did Floyd wear on his shirt when he ran track in high school? Choose a number 1 - 10. (5 attemtps)`
         );
-        console.log('Question 6 shirtnum', typeof shirtNum);
-        while (tries < 6 || shirtNum !== 8) {
+
+        while (tries <= 6 ) {
           if (shirtNum === '8') {
+            tries++;
             var node = document.createElement('LI');
-            var textnode = document.createTextNode(`Your are right he wore the number eight.`);
+            var textnode = document.createTextNode(`Your are right he wore the number eight. ${tries} attempts out of 5`);
             node.appendChild(textnode);
             answer.appendChild(node);
-            tries = 0;
             correct++;
             break;
-          } else if (shirtNum < 8 && tries < 6) {
+          } else if (shirtNum < 8 && tries <  5) {
             tries++;
-            shirtNum = prompt(`too low try again. (${tries} attempts out of 8)`);
-          } else if (shirtNum > 8 && tries < 6) {
+            shirtNum = prompt(`too low try again. (${tries} attempts out of 5)`);
+          } else if (shirtNum > 8 && tries < 5) {
             tries++;
-            shirtNum = prompt(`too high try again.(${tries} attempts out of 8)`);
+            shirtNum = prompt(`too high try again.(${tries} attempts out of 5)`);
+          } else if (tries === 5) {
+            tries++;
+            var node = document.createElement('LI');
+            var textnode = document.createTextNode(`Wrong: Your are wrong he wore the number eight. ${tries} attempts out of 5`);
+            node.appendChild(textnode);
+            answer.appendChild(node);
+            break;
+
           }
         }
       }
@@ -273,33 +281,44 @@
         element.classList.remove("active");
         var attempt = 0;
         var country = prompt(
-          `Hey${name}, what country did Floyd live in as a kid? (7 attempts)`
+          `Hey${name}, what country did Floyd live in as a kid? (5 attempts)`
         );
-        console.log('Question 6 shirtnum', typeof shirtNum);
         country.toLowerCase();
-       
-        while (attempt < 7) {
-          if (country === 'korea') {
+        while (attempt <= 6) {
+          if(country !== "korea" && attempt <= 5){
+            console.log(289)
+            attempt++;
+            country = prompt(
+              `Hey${name}, nice try but wrong answer, try again.(${attempt} out of 5 attempts)`
+            );
+          }
+          else if (country === 'korea') {
+            console.log(295)
+            correct++;
+            attempt ++;
             var node = document.createElement('LI');
             var textnode = document.createTextNode(
               `Correct: The country is ${country} he lived in as a kid.`
             );
             node.appendChild(textnode);
             answer.appendChild(node);
-            attempt = 8;
-            correct++;
             break;
           } else {
+            console.log(305)
             attempt++;
-
-            country = prompt(
-              `Hey${name}, nice try but wrong answer, try again.(${attempt} out of 7 attempts)`
+            var node = document.createElement('LI');
+            var textnode = document.createTextNode(
+              `Wrong: The country he lived in as a kid was Korea. (${attempt} out of 5 attempts)`
             );
+            node.appendChild(textnode);
+            answer.appendChild(node);
+            break;
+
           }
         }
         var node = document.createElement('LI');
         var textnode = document.createTextNode(
-          `You got ${correct} answers out of 7.`
+          `You got ${correct} answers out of 7 correct.`
         );
         node.appendChild(textnode);
         answer.appendChild(node);
