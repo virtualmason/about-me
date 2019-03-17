@@ -43,7 +43,7 @@ a:link {
 }
 
 .active {
-  background: lightblue;
+  background: grey;
 }
 
 .aboveButtons{
@@ -83,7 +83,7 @@ nav {
 
 .answer {
   margin-top: 3%;
-  color: lightblue;
+  color: grey;
 }
 
 .bottom {
