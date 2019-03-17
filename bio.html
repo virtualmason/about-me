@@ -90,7 +90,7 @@
         var name = prompt('What is your name');
         console.log('what is your name', name);
         var state = prompt(
-          `Hey ${name}, What is a state is Floyd has lived in? Write the abbreviation?`
+          `Hey${name}, what is a state Floyd has lived in? Write the abbreviation?`
         );
         state.toLowerCase();
         var list = ['fl', 'dc', 'tx'];
@@ -125,7 +125,7 @@
         element.classList.add("active");
 
         var hobby = prompt(
-          `Hey ${name}, What was Floyd's favorit hobby when he grew up on a military base as a kid? skateboarding, cooking, shooting or hunting?`
+          `Hey${name}, what was Floyd's favorite hobby when he grew up on a military base as a kid? skateboarding, cooking, shooting or hunting?`
         );
         hobby.toLowerCase();
         if (hobby === 'skateboarding') {
@@ -155,7 +155,7 @@
         element = document.getElementById("four");
         element.classList.add("active");
         var cert = prompt(
-          `Hey ${name}, What is Floyd certified in? Google advertising, project management, scrum? `
+          `Hey ${name}, What is Floyd certified in? (google advertising, project management, scrum)? `
         );
         cert.toLowerCase();
 
@@ -170,7 +170,7 @@
         } else {
           var node = document.createElement('LI');
           var textnode = document.createTextNode(
-            `Wrong: He is certified in Google Advertising.`
+            `Wrong: He is certified in google advertising.`
           );
           node.appendChild(textnode);
           answer.appendChild(node);
@@ -185,7 +185,7 @@
         element = document.getElementById("five");
         element.classList.add("active");
         var pref = prompt(
-          `Hey ${name}, What does Floyd prefer? Going out for a (drink, eat, dancing or walk?`
+          `Hey${name}, what does Floyd prefer? Going out for a (drink, bite, dance or walk?`
         );
         pref.toLowerCase();
         if (pref === 'walk') {
@@ -215,7 +215,7 @@
         element = document.getElementById("six");
         element.classList.add("active");
         var watch = prompt(
-          `Hey ${name}, what does Floyd prefer to watch? (baskeball, soccer, MMA, Football).`
+          `Hey${name}, what does Floyd prefer to watch? (baskeball, soccer, MMA, Football).`
         );
         console.log('Question 5 watch', watch);
 
@@ -247,7 +247,7 @@
         var guess = 0;
         var tries = 0;
         var shirtNum = prompt(
-          `Hey ${name}, what number did Floyd wear on his shirt when he ran track in high school? Choose a number 1 - 10`
+          `Hey${name}, what number did Floyd wear on his shirt when he ran track in high school? Choose a number 1 - 10`
         );
         console.log('Question 6 shirtnum', typeof shirtNum);
         while (tries < 5 || shirtNum !== 8) {
@@ -281,7 +281,7 @@
         
         var attempt = 0;
         var country = prompt(
-          `Hey ${name}, what country did Floyd live in as a kid?`
+          `Hey${name}, what country did Floyd live in as a kid?`
         );
         console.log('Question 6 shirtnum', typeof shirtNum);
         country.toLowerCase();
@@ -300,7 +300,7 @@
             break;
           } else {
             country = prompt(
-              `Hey ${name}, nice try but wrong answer try again`
+              `Hey${name}, nice try but wrong answer try again`
             );
             attempt++;
           }
