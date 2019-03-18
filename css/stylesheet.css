@@ -9,8 +9,9 @@ body {
   font-family: Arial;  
   color: white;
 }
+
  .header {
-   margin-top: 2%;;
+   /* margin-top: 2%;; */
  }
 
 .indexNav {
@@ -39,9 +40,11 @@ a:link {
 .top-nav {
   text-decoration: none;
 }
+
 .top-nav {
   margin-top: 5%;
 }
+
 .open-sans {
   font-family: Arial;
 }
