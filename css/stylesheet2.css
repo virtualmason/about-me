@@ -1,6 +1,9 @@
 *,html {
   box-sizing: border-box;
 }
+.header {
+  background-color: green;
+}
 
 body {
   width : 100vw;
