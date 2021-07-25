@@ -182,7 +182,7 @@ header img {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.type-face-black{
+.grid-item > .type-face-black{
   font-family: Arial, Helvetica, sans-serif;
   color:black;
   font-size: 30px;
