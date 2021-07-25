@@ -182,12 +182,6 @@ header img {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.grid-item > .type-face-black{
-  font-family: Arial, Helvetica, sans-serif;
-  color:black;
-  font-size: 30px;
-}
-
 .box {
   text-align: center;
   line-height: 1em;
