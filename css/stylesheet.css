@@ -158,7 +158,9 @@ header img {
 } 
 
  .small{
-   font-size: small ;
+   font-size: small;
+   margin-top: 10px
+   margin-bottom: 10px;	   
  }
 
 /* Keep top as it is to keek mobile view from pushing testimonial up */
