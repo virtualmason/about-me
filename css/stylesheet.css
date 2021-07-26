@@ -9,6 +9,10 @@ body {
   font-family: Arial;  
   color: black;
 }
+small-text {
+  font-size:16px	
+	
+}
 h3 {
   color: black;
 }
