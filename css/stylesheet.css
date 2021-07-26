@@ -6,7 +6,7 @@ body {
   background: grey; 
   border-radius: 100px 100px;
   overflow: scroll;
-  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-family: Verdana;
   color: black;
 }
 .small-text {
@@ -153,7 +153,7 @@ header img {
  }
 
  header > h3 {
-   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-family: Verdana;
    margin-bottom: 0;
 } 
 
@@ -193,7 +193,7 @@ header img {
 }
 
 .type-face{
-  font-family:Verdana, Arial, Helvetica, sans-serif;
+  font-family:Verdana;
   color:black;
 }
 
