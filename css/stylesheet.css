@@ -55,7 +55,7 @@ a:link {
 
 .center > a, .center{
   text-align: center;
-  color: white;
+  color: black;
   margin-top: 30px 19% 0 0;;
 }
 
@@ -185,7 +185,7 @@ header img {
 .box {
   text-align: center;
   line-height: 1em;
-  color: white;
+  color: black;
   padding-top: 1%;
 }
 
