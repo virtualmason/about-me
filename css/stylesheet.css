@@ -64,14 +64,14 @@ h3 > .email {
   margin-top: 12%;
   display: relative;
   right: 50%;
-  color: white;
+  color: black;
 }
 .email {
   text-align: center;
   margin-top: 12%;
   display: relative;
   right: 50%;
-  color: white;
+  color: black;
 }
 header {
   display: block;
@@ -190,7 +190,7 @@ header img {
 }
 
 .black-text {
-  color" back;	
+  color: black;	
 }
 
 .float-left {
