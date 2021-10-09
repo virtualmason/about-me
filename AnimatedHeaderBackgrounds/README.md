@@ -1,5 +1,4 @@
-Animated Background Headers
-=========
+Floyd Orr's portollio page and blog.
 
 A collection of animated background header effects for your inspiration. We use Canvas and Javascript to create an animated background for large site headers.
 
