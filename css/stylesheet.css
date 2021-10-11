@@ -1,4 +1,26 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  position: absolute;
+  color: black;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
 
+.grid-item {
+  background-color: rgba(255, 255, 255);
+  padding: 5%;
+  font-size: 30px;
+  text-align: center;
+}
+
+a:link {
+  color: black;
+  margin: 10px;
+}
 
 body {
   width : 100vw;
