@@ -10,9 +10,9 @@
   transform: translate(-50%,-50%);
 }
 
-header-two {
+.header-two {
   display: block;
-	color: white;
+  color: white;
   /* margin: auto; */
   text-align: center;
 /*   margin-top: 10%;
