@@ -30,9 +30,7 @@
 
 #black {
 	background-color: rgba(26, 40, 31);
-	color: white;
-	border: white;
-	padding: 5%;
+	color: white
         font-size: 30px;
        text-align: center;
 }
