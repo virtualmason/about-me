@@ -17,6 +17,10 @@
   text-align: center;
 }
 
+black {
+	background:1a281f;
+	
+}
 a:link {
   color: black;
   margin: 10px;
