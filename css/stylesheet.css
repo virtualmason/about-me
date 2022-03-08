@@ -180,9 +180,9 @@ nav :nth-child(4n) {
   color: black;
   }
 
-/* a {
+a {
   text-decoration: none;
-} */
+}
 
 .video {
 /*   margin-top: 5%; */
