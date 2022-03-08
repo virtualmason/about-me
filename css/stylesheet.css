@@ -10,6 +10,10 @@
   transform: translate(-50%,-50%);
 }
 
+.margin-top {
+	margin-top: 10px
+
+}
 .header-two {
   display: block;
   color: white;
