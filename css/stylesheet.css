@@ -5,6 +5,7 @@
   color: black;
   top: 50%;
   left: 50%;
+  margin: auto;
   -ms-transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
@@ -185,12 +186,10 @@ nav :nth-child(4n) {
   }
 
 a {
-  text-decoration-underline: none;
+  text-decoration: none;
 }
 
-.video {
-/*   margin-top: 5%; */
-}
+
 
 header img {
   width: 100px;
