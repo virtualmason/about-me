@@ -5,7 +5,6 @@
   color: black;
   top: 50%;
   left: 50%;
-  margin: auto;
   -ms-transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
@@ -15,10 +14,6 @@
   margin-top: 10px;
 }
 
-
-main {
-margin: auto;
-}
 
 .header-two {
   display: block;
@@ -214,7 +209,7 @@ header img {
  }
 
 /* Keep top as it is to keek mobile view from pushing testimonial up */
- .grid-container {
+/*  .grid-container {
   display: grid;
   grid-template-columns: auto auto ;
   padding: 20px;
@@ -229,7 +224,7 @@ header img {
   -webkit-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
 
-} 
+}  */
 .grid-item > .black {
   color: black;
 }
