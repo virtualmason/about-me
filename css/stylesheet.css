@@ -15,7 +15,9 @@
 }
 
 
-
+main {
+margin: auto;
+}
 .header-two {
   display: block;
   color: white;
